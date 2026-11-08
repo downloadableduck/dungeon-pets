@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeon_pets",
+  "version": "${version}",
+  "name": "Dungeon Pets",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/dungeon_pets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.jeff.pets.dungon_pets.fabric.DungeonPetsFabric"
+    ],
+    "client": [
+      "com.jeff.pets.dungon_pets.fabric.client.DungeonPetsFabricClient"
+    ]
+  },
+  "mixins": [
+    "dungeon_pets.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

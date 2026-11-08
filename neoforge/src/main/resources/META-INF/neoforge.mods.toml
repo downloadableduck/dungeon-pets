@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "dungeon_pets"
+version = "${version}"
+displayName = "Dungeon Pets"
+authors = "Me!"
+description = '''
+This is an example description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.dungeon_pets]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.2.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dungeon_pets]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "dungeon_pets.mixins.json"

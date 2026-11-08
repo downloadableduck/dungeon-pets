@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "dungeon_pets:item/mace",
+    "model": {
+      "type": "geckolib:geckolib"
+    }
+  }
+}
