@@ -3,17 +3,18 @@
   "id": "dungeon_pets",
   "version": "${version}",
   "name": "Dungeon Pets",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Adds all of the mobs featured in Minecraft: Dungeons into Pets Mod!",
   "authors": [
-    "Me!"
+    "The Pets Team",
+    "downloadableduck"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://petsmod.com/",
+    "sources": "https://github.com/downloadableduck/dungeon-pets"
   },
   "license": "MIT",
   "icon": "assets/dungeon_pets/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "com.jeff.pets.dungon_pets.fabric.DungeonPetsFabric"
@@ -29,9 +30,16 @@
     "fabricloader": ">=0.20.1",
     "minecraft": "~26.2",
     "java": ">=25",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "pets-mod": ">=0.8.7",
+    "geckolib": "*"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/dungeon-pets"
+      },
+      "parent": "pets-mod"
+    }
   }
 }

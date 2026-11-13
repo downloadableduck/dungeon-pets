@@ -1,31 +1,45 @@
 modLoader = "javafml"
 loaderVersion = "[1,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/downloadableduck/dungeon-pets/issues"
+license = "MIT"
 
 [[mods]]
 modId = "dungeon_pets"
 version = "${version}"
 displayName = "Dungeon Pets"
-authors = "Me!"
+authors = "The Pets Team, downloadableduck"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Adds all of the mobs featured in Minecraft: Dungeons into Pets Mod!
 '''
-#logoFile = ""
+iconFile = "assets/dungeon_pets/icon.png"
 
 [[dependencies.dungeon_pets]]
 modId = "neoforge"
 type = "required"
 versionRange = "[26.2.0,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.dungeon_pets]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.2,)"
+versionRange = "[26.2]"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
+
+[[dependencies.dungeon_pets]]
+modId = "pets_mod"
+type = "required"
+versionRange =  "[0.8.7,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.dungeon_pets]]
+modId = "geckolib"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "CLIENT"
 
 [[mixins]]
 config = "dungeon_pets.mixins.json"

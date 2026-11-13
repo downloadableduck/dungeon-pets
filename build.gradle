@@ -39,7 +39,7 @@ subprojects {
     dependencies {
         minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
         //compileOnly "maven.modrinth:WwqTyEtB:IgYebx3Y" //petsmod
-        compileOnly "maven.modrinth:pets-mod:0.8.7-26.2-Fabric" //geckolib
+        compileOnly "maven.modrinth:pets-mod:${project.pets_mod_version}-${project.minecraft_version}-Fabric" //geckolib
     }
 
     java {

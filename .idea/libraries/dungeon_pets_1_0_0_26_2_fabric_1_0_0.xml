@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dungeon-pets-1.0.0-26.2-fabric-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/fabric/build/libs/dungeon-pets-1.0.0-26.2-fabric-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
