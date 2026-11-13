@@ -1,11 +1,8 @@
 package com.jeff.pets.dungon_pets.fabric;
 
-import com.jeff.pets.dungon_pets.mob.pets.Key;
-import net.fabricmc.api.ModInitializer;
-
 import com.jeff.pets.dungon_pets.DungeonPets;
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 
 public final class DungeonPetsFabric implements ModInitializer {
     @Override

@@ -1,13 +1,10 @@
 package com.jeff.pets.dungon_pets.client.rendering.baby_ghast;
 
-import com.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsGeoRenderer;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsPetRenderState;
 import com.jeff.pets.dungon_pets.mob.pets.BabyGhast;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.entity.state.EntityRenderState;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.rendertype.RenderType;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.resources.Identifier;

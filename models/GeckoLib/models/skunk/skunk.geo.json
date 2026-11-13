@@ -1,246 +1,914 @@
 {
-	"format_version": "1.12.0",
-	"minecraft:geometry": [
-		{
-			"description": {
-				"identifier": "geometry.sk_skunk",
-				"texture_width": 128,
-				"texture_height": 64,
-				"visible_bounds_width": 2,
-				"visible_bounds_height": 1.5,
-				"visible_bounds_offset": [0, 0.25, 0]
-			},
-			"bones": [
-				{
-					"name": "J_Root",
-					"pivot": [0, 0, -0.195]
-				},
-				{
-					"name": "J_Hips_joint",
-					"parent": "J_Root",
-					"pivot": [0, 3.225, -0.195]
-				},
-				{
-					"name": "J_Body_joint",
-					"parent": "J_Hips_joint",
-					"pivot": [0, 3.225, -0.195],
-					"cubes": [
-						{
-							"origin": [-1.562, 0.781, -1.367],
-							"size": [3.125, 5.078, 2.734],
-							"pivot": [0, 3.32, 0],
-							"rotation": [-90, 0, 0],
-							"uv": {
-								"north": {"uv": [0.00098, 19], "uv_size": [7.99902, 13]},
-								"east": {"uv": [8, 19], "uv_size": [7, 13]},
-								"south": {"uv": [14.99219, 19], "uv_size": [8.00781, 13]},
-								"west": {"uv": [15, 19], "uv_size": [-7, 13]},
-								"up": {"uv": [8, 19], "uv_size": [-7.99902, -7]},
-								"down": {"uv": [8, 12], "uv_size": [-7.99902, 7]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_Head_joint1",
-					"parent": "J_Body_joint",
-					"pivot": [0, 3.52, 2.531],
-					"cubes": [
-						{
-							"origin": [-0.977, 2.711, 2.734],
-							"size": [1.954, 2.735, 2.344],
-							"pivot": [0, 4.079, 3.906],
-							"rotation": [-90, 0, -90],
-							"uv": {
-								"north": {"uv": [90.625, 1], "uv_size": [-15.625, 21.87503]},
-								"east": {"uv": [72.75, 1], "uv_size": [-18.75, 21.87503]},
-								"south": {"uv": [93, 1], "uv_size": [15.625, 21.87503]},
-								"west": {"uv": [33, 1], "uv_size": [18.75, 21.87503]},
-								"up": {"uv": [126.625, 19.75], "uv_size": [-15.625, -18.75]},
-								"down": {"uv": [16.625, 33], "uv_size": [-15.625, 18.75]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_L_Ear_joint",
-					"parent": "J_Head_joint1",
-					"pivot": [-0.952, 4.888, 3.324],
-					"cubes": [
-						{
-							"origin": [-1.563, 4.688, 3.32],
-							"size": [0.782, 0.781, 0],
-							"uv": {
-								"north": {"uv": [27, 19], "uv_size": [2, 2]},
-								"south": {"uv": [29, 19], "uv_size": [-2, 2]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_Muzzle_joint",
-					"parent": "J_Head_joint1",
-					"pivot": [0, 3.551, 5.259],
-					"cubes": [
-						{
-							"origin": [-0.391, 3.102, 4.86],
-							"size": [0.782, 0.781, 1.578],
-							"inflate": 0.01,
-							"pivot": [0, 3.493, 5.649],
-							"rotation": [91.12, 0, -90],
-							"uv": {
-								"north": {"uv": [73.25, 33], "uv_size": [-6.25, 6.24882]},
-								"east": {"uv": [64.62424, 33], "uv_size": [-12.62424, 6.24882]},
-								"south": {"uv": [76, 33], "uv_size": [6.25, 6.24882]},
-								"west": {"uv": [37, 33], "uv_size": [12.62424, 6.24882]},
-								"up": {"uv": [25.25, 45.62424], "uv_size": [-6.25, -12.62424]},
-								"down": {"uv": [34.25, 33], "uv_size": [-6.25, 12.62424]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_R_Ear_joint",
-					"parent": "J_Head_joint1",
-					"pivot": [0.976, 4.888, 3.324],
-					"cubes": [
-						{
-							"origin": [0.781, 4.688, 3.32],
-							"size": [0.781, 0.781, 0],
-							"uv": {
-								"north": {"uv": [29, 19], "uv_size": [-2, 2]},
-								"south": {"uv": [27, 19], "uv_size": [2, 2]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_Tail_joint",
-					"parent": "J_Body_joint",
-					"pivot": [0, 3.901, -2.54],
-					"cubes": [
-						{
-							"origin": [-0.781, 1.953, -5.273],
-							"size": [1.562, 3.516, 1.953],
-							"pivot": [0, 3.711, -4.297],
-							"rotation": [90, 0, 0],
-							"uv": {
-								"north": {"uv": [22.92188, 4.67188], "uv_size": [-2.75, 6.1875]},
-								"east": {"uv": [28, 0.00098], "uv_size": [-5, 8.99902]},
-								"south": {"uv": [32, 1], "uv_size": [-4, 9]},
-								"west": {"uv": [23, 0.00098], "uv_size": [5, 8.99902]},
-								"up": {"uv": [32, 14], "uv_size": [-4, 5]},
-								"down": {"uv": [27.75, 16.70313], "uv_size": [-2.26562, -2.82812]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_Tail_end_joint",
-					"parent": "J_Tail_joint",
-					"pivot": [0, 3.901, -6.056]
-				},
-				{
-					"name": "J_L_BackLeg_joint",
-					"parent": "J_Root",
-					"pivot": [-0.801, 2.345, -1.76],
-					"cubes": [
-						{
-							"origin": [-1.172, 0, -2.148],
-							"size": [0.781, 2.344, 0.781],
-							"uv": {
-								"north": {"uv": [27, 25], "uv_size": [2, 6]},
-								"east": {"uv": [32, 26], "uv_size": [-2, 6]},
-								"south": {"uv": [26, 26], "uv_size": [-2, 6]},
-								"west": {"uv": [30.98438, 26], "uv_size": [-1.98437, 6]},
-								"up": {"uv": [31, 23], "uv_size": [-2, 2]},
-								"down": {"uv": [24, 25], "uv_size": [2, -2]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_L_BackLeg_end_joint",
-					"parent": "J_L_BackLeg_joint",
-					"pivot": [-0.81, 0.002, -1.763]
-				},
-				{
-					"name": "J_L_FrontLeg_joint",
-					"parent": "J_Root",
-					"pivot": [-0.801, 2.345, 1.76],
-					"cubes": [
-						{
-							"origin": [-1.172, 0.781, 0.586],
-							"size": [0.781, 0.782, 2.344],
-							"pivot": [-0.781, 1.172, 1.758],
-							"rotation": [90, 0, -180],
-							"uv": {
-								"north": {"uv": [29, 25], "uv_size": [2, -2]},
-								"east": {"uv": [29, 26], "uv_size": [1.98438, 0]},
-								"south": {"uv": [24, 25], "uv_size": [2, -2]},
-								"west": {"uv": [32, 25], "uv_size": [-6, -2]},
-								"up": {"uv": [29, 31], "uv_size": [-2, -6]},
-								"down": {"uv": [29, 26], "uv_size": [-2, 6]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_L_FrontLeg_end_joint",
-					"parent": "J_L_FrontLeg_joint",
-					"pivot": [-0.81, 0.002, 1.767]
-				},
-				{
-					"name": "J_R_BackLeg_joint",
-					"parent": "J_Root",
-					"pivot": [0.801, 2.345, -1.76],
-					"cubes": [
-						{
-							"origin": [0.391, 0.781, -2.93],
-							"size": [0.781, 0.782, 2.344],
-							"pivot": [0.781, 1.172, -1.758],
-							"rotation": [-90, 0, 0],
-							"uv": {
-								"north": {"uv": [29, 23], "uv_size": [2, 2]},
-								"east": {"uv": [29, 26], "uv_size": [1.98438, 6]},
-								"south": {"uv": [24, 23], "uv_size": [2, 2]},
-								"west": {"uv": [32, 23], "uv_size": [-6, 2]},
-								"up": {"uv": [29, 32], "uv_size": [-2, -6]},
-								"down": {"uv": [29, 25], "uv_size": [-2, 6]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_R_BackLeg_end_joint",
-					"parent": "J_R_BackLeg_joint",
-					"pivot": [0.845, 0.002, -1.763]
-				},
-				{
-					"name": "J_R_FrontLeg_joint",
-					"parent": "J_Root",
-					"pivot": [0.801, 2.345, 1.76],
-					"cubes": [
-						{
-							"origin": [0.391, 0, 1.367],
-							"size": [0.781, 2.344, 0.781],
-							"uv": {
-								"north": {"uv": [29, 25], "uv_size": [-2, 6]},
-								"east": {"uv": [29, 26], "uv_size": [1.98438, 6]},
-								"south": {"uv": [24, 26], "uv_size": [2, 6]},
-								"west": {"uv": [30, 26], "uv_size": [2, 6]},
-								"up": {"uv": [29, 23], "uv_size": [2, 2]},
-								"down": {"uv": [26, 25], "uv_size": [-2, -2]}
-							}
-						}
-					]
-				},
-				{
-					"name": "J_R_FrontLeg_end_joint",
-					"parent": "J_R_FrontLeg_joint",
-					"pivot": [0.845, 0.002, 1.767]
-				}
-			]
-		}
-	]
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.sk_skunk",
+        "texture_width": 128,
+        "texture_height": 64,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 1.5,
+        "visible_bounds_offset": [
+          0,
+          0.25,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "J_Root",
+          "pivot": [
+            0,
+            0,
+            -0.195
+          ]
+        },
+        {
+          "name": "J_Hips_joint",
+          "parent": "J_Root",
+          "pivot": [
+            0,
+            3.225,
+            -0.195
+          ]
+        },
+        {
+          "name": "J_Body_joint",
+          "parent": "J_Hips_joint",
+          "pivot": [
+            0,
+            3.225,
+            -0.195
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.562,
+                0.781,
+                -1.367
+              ],
+              "size": [
+                3.125,
+                5.078,
+                2.734
+              ],
+              "pivot": [
+                0,
+                3.32,
+                0
+              ],
+              "rotation": [
+                -90,
+                0,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0.00098,
+                    19
+                  ],
+                  "uv_size": [
+                    7.99902,
+                    13
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    8,
+                    19
+                  ],
+                  "uv_size": [
+                    7,
+                    13
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    14.99219,
+                    19
+                  ],
+                  "uv_size": [
+                    8.00781,
+                    13
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    15,
+                    19
+                  ],
+                  "uv_size": [
+                    -7,
+                    13
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    8,
+                    19
+                  ],
+                  "uv_size": [
+                    -7.99902,
+                    -7
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    8,
+                    12
+                  ],
+                  "uv_size": [
+                    -7.99902,
+                    7
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_Head_joint1",
+          "parent": "J_Body_joint",
+          "pivot": [
+            0,
+            3.52,
+            2.531
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.977,
+                2.711,
+                2.734
+              ],
+              "size": [
+                1.954,
+                2.735,
+                2.344
+              ],
+              "pivot": [
+                0,
+                4.079,
+                3.906
+              ],
+              "rotation": [
+                -90,
+                0,
+                -90
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    90.625,
+                    1
+                  ],
+                  "uv_size": [
+                    -15.625,
+                    21.87503
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    72.75,
+                    1
+                  ],
+                  "uv_size": [
+                    -18.75,
+                    21.87503
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    93,
+                    1
+                  ],
+                  "uv_size": [
+                    15.625,
+                    21.87503
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    33,
+                    1
+                  ],
+                  "uv_size": [
+                    18.75,
+                    21.87503
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    126.625,
+                    19.75
+                  ],
+                  "uv_size": [
+                    -15.625,
+                    -18.75
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    16.625,
+                    33
+                  ],
+                  "uv_size": [
+                    -15.625,
+                    18.75
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_L_Ear_joint",
+          "parent": "J_Head_joint1",
+          "pivot": [
+            -0.952,
+            4.888,
+            3.324
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.563,
+                4.688,
+                3.32
+              ],
+              "size": [
+                0.782,
+                0.781,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    27,
+                    19
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    29,
+                    19
+                  ],
+                  "uv_size": [
+                    -2,
+                    2
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_Muzzle_joint",
+          "parent": "J_Head_joint1",
+          "pivot": [
+            0,
+            3.551,
+            5.259
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.391,
+                3.102,
+                4.86
+              ],
+              "size": [
+                0.782,
+                0.781,
+                1.578
+              ],
+              "inflate": 0.01,
+              "pivot": [
+                0,
+                3.493,
+                5.649
+              ],
+              "rotation": [
+                91.12,
+                0,
+                -90
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    73.25,
+                    33
+                  ],
+                  "uv_size": [
+                    -6.25,
+                    6.24882
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    64.62424,
+                    33
+                  ],
+                  "uv_size": [
+                    -12.62424,
+                    6.24882
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    76,
+                    33
+                  ],
+                  "uv_size": [
+                    6.25,
+                    6.24882
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    37,
+                    33
+                  ],
+                  "uv_size": [
+                    12.62424,
+                    6.24882
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    25.25,
+                    45.62424
+                  ],
+                  "uv_size": [
+                    -6.25,
+                    -12.62424
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    34.25,
+                    33
+                  ],
+                  "uv_size": [
+                    -6.25,
+                    12.62424
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_R_Ear_joint",
+          "parent": "J_Head_joint1",
+          "pivot": [
+            0.976,
+            4.888,
+            3.324
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.781,
+                4.688,
+                3.32
+              ],
+              "size": [
+                0.781,
+                0.781,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    29,
+                    19
+                  ],
+                  "uv_size": [
+                    -2,
+                    2
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    27,
+                    19
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_Tail_joint",
+          "parent": "J_Body_joint",
+          "pivot": [
+            0,
+            3.901,
+            -2.54
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -0.781,
+                1.953,
+                -5.273
+              ],
+              "size": [
+                1.562,
+                3.516,
+                1.953
+              ],
+              "pivot": [
+                0,
+                3.711,
+                -4.297
+              ],
+              "rotation": [
+                90,
+                0,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    22.92188,
+                    4.67188
+                  ],
+                  "uv_size": [
+                    -2.75,
+                    6.1875
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    28,
+                    0.00098
+                  ],
+                  "uv_size": [
+                    -5,
+                    8.99902
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    32,
+                    1
+                  ],
+                  "uv_size": [
+                    -4,
+                    9
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    23,
+                    0.00098
+                  ],
+                  "uv_size": [
+                    5,
+                    8.99902
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    32,
+                    14
+                  ],
+                  "uv_size": [
+                    -4,
+                    5
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    27.75,
+                    16.70313
+                  ],
+                  "uv_size": [
+                    -2.26562,
+                    -2.82812
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_Tail_end_joint",
+          "parent": "J_Tail_joint",
+          "pivot": [
+            0,
+            3.901,
+            -6.056
+          ]
+        },
+        {
+          "name": "J_L_BackLeg_joint",
+          "parent": "J_Root",
+          "pivot": [
+            -0.801,
+            2.345,
+            -1.76
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.172,
+                0,
+                -2.148
+              ],
+              "size": [
+                0.781,
+                2.344,
+                0.781
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    27,
+                    25
+                  ],
+                  "uv_size": [
+                    2,
+                    6
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    32,
+                    26
+                  ],
+                  "uv_size": [
+                    -2,
+                    6
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    26,
+                    26
+                  ],
+                  "uv_size": [
+                    -2,
+                    6
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    30.98438,
+                    26
+                  ],
+                  "uv_size": [
+                    -1.98437,
+                    6
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    31,
+                    23
+                  ],
+                  "uv_size": [
+                    -2,
+                    2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    24,
+                    25
+                  ],
+                  "uv_size": [
+                    2,
+                    -2
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_L_BackLeg_end_joint",
+          "parent": "J_L_BackLeg_joint",
+          "pivot": [
+            -0.81,
+            0.002,
+            -1.763
+          ]
+        },
+        {
+          "name": "J_L_FrontLeg_joint",
+          "parent": "J_Root",
+          "pivot": [
+            -0.801,
+            2.345,
+            1.76
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1.172,
+                0.781,
+                0.586
+              ],
+              "size": [
+                0.781,
+                0.782,
+                2.344
+              ],
+              "pivot": [
+                -0.781,
+                1.172,
+                1.758
+              ],
+              "rotation": [
+                90,
+                0,
+                -180
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    29,
+                    25
+                  ],
+                  "uv_size": [
+                    2,
+                    -2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    29,
+                    26
+                  ],
+                  "uv_size": [
+                    1.98438,
+                    0
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    25
+                  ],
+                  "uv_size": [
+                    2,
+                    -2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    32,
+                    25
+                  ],
+                  "uv_size": [
+                    -6,
+                    -2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    29,
+                    31
+                  ],
+                  "uv_size": [
+                    -2,
+                    -6
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    29,
+                    26
+                  ],
+                  "uv_size": [
+                    -2,
+                    6
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_L_FrontLeg_end_joint",
+          "parent": "J_L_FrontLeg_joint",
+          "pivot": [
+            -0.81,
+            0.002,
+            1.767
+          ]
+        },
+        {
+          "name": "J_R_BackLeg_joint",
+          "parent": "J_Root",
+          "pivot": [
+            0.801,
+            2.345,
+            -1.76
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.391,
+                0.781,
+                -2.93
+              ],
+              "size": [
+                0.781,
+                0.782,
+                2.344
+              ],
+              "pivot": [
+                0.781,
+                1.172,
+                -1.758
+              ],
+              "rotation": [
+                -90,
+                0,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    29,
+                    23
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    29,
+                    26
+                  ],
+                  "uv_size": [
+                    1.98438,
+                    6
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    23
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    32,
+                    23
+                  ],
+                  "uv_size": [
+                    -6,
+                    2
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    29,
+                    32
+                  ],
+                  "uv_size": [
+                    -2,
+                    -6
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    29,
+                    25
+                  ],
+                  "uv_size": [
+                    -2,
+                    6
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_R_BackLeg_end_joint",
+          "parent": "J_R_BackLeg_joint",
+          "pivot": [
+            0.845,
+            0.002,
+            -1.763
+          ]
+        },
+        {
+          "name": "J_R_FrontLeg_joint",
+          "parent": "J_Root",
+          "pivot": [
+            0.801,
+            2.345,
+            1.76
+          ],
+          "cubes": [
+            {
+              "origin": [
+                0.391,
+                0,
+                1.367
+              ],
+              "size": [
+                0.781,
+                2.344,
+                0.781
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    29,
+                    25
+                  ],
+                  "uv_size": [
+                    -2,
+                    6
+                  ]
+                },
+                "east": {
+                  "uv": [
+                    29,
+                    26
+                  ],
+                  "uv_size": [
+                    1.98438,
+                    6
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    24,
+                    26
+                  ],
+                  "uv_size": [
+                    2,
+                    6
+                  ]
+                },
+                "west": {
+                  "uv": [
+                    30,
+                    26
+                  ],
+                  "uv_size": [
+                    2,
+                    6
+                  ]
+                },
+                "up": {
+                  "uv": [
+                    29,
+                    23
+                  ],
+                  "uv_size": [
+                    2,
+                    2
+                  ]
+                },
+                "down": {
+                  "uv": [
+                    26,
+                    25
+                  ],
+                  "uv_size": [
+                    -2,
+                    -2
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "J_R_FrontLeg_end_joint",
+          "parent": "J_R_FrontLeg_joint",
+          "pivot": [
+            0.845,
+            0.002,
+            1.767
+          ]
+        }
+      ]
+    }
+  ]
 }

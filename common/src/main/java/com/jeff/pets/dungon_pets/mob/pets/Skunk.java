@@ -13,11 +13,11 @@ public class Skunk extends DungeonsGroundPet {
 
     @Override
     protected int stopDistance() {
-        return 0;
+        return 2;
     }
 
     @Override
     protected float heartHeight() {
-        return 0;
+        return 0.5f;
     }
 }

@@ -29,7 +29,7 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     implementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
-    implementation "maven.modrinth:WwqTyEtB:EeeLZ8zp" //petsmod
+    implementation "maven.modrinth:pets-mod:0.8.7-26.2-Fabric" //petsmod
     implementation "maven.modrinth:8BmcQJ2H:7gaQHok7" //geckolib
 
     common(project(path: ':common')) { transitive = false }

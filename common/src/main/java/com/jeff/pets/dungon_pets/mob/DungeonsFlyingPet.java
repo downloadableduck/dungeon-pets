@@ -66,8 +66,8 @@ public abstract class DungeonsFlyingPet extends FlyingPet implements GeoEntity {
 
     @Override
     public float distanceTo(Entity entity) {
-        float x = (float)(this.getX() - entity.getX());
-        float z = (float)(this.getZ() - entity.getZ());
+        float x = (float) (this.getX() - entity.getX());
+        float z = (float) (this.getZ() - entity.getZ());
         return Mth.sqrt(x * x + z * z);
     }
 }

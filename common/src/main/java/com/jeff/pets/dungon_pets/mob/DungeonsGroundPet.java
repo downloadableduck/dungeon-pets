@@ -57,13 +57,13 @@ public abstract class DungeonsGroundPet extends GroundPet implements GeoEntity {
     }
 
     public boolean isMoving() {
-        return this.distanceTo(this.getOwner()) > 1.5;
+        return this.distanceTo(this.getOwner()) > 1.5f;
     }
 
     @Override
     public float distanceTo(Entity entity) {
-        float x = (float)(this.getX() - entity.getX());
-        float z = (float)(this.getZ() - entity.getZ());
+        float x = (float) (this.getX() - entity.getX());
+        float z = (float) (this.getZ() - entity.getZ());
         return Mth.sqrt(x * x + z * z);
     }
 }

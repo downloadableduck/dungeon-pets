@@ -1,10 +1,8 @@
 package com.jeff.pets.dungon_pets.client.rendering.glowing_mini_abomination;
 
-import com.geckolib.model.GeoModel;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsGeoRenderer;
 import com.jeff.pets.dungon_pets.mob.pets.GlowingMiniAbomination;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import org.jetbrains.annotations.NotNull;
 
 public class GlowingMiniAbominationRenderer extends DungeonsGeoRenderer<GlowingMiniAbomination> {
     public GlowingMiniAbominationRenderer(EntityRendererProvider.Context context) {
@@ -14,5 +12,10 @@ public class GlowingMiniAbominationRenderer extends DungeonsGeoRenderer<GlowingM
     @Override
     public float getScale() {
         return 3;
+    }
+
+    @Override
+    public boolean hasShadowTexture() {
+        return true;
     }
 }

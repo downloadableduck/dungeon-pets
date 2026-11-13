@@ -1,6 +1,5 @@
 package com.jeff.pets.dungon_pets.client.rendering.luxury_merchant;
 
-import com.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsGeoRenderer;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsPetRenderState;
@@ -15,7 +14,7 @@ public class LuxuryMerchantRenderer extends DungeonsGeoRenderer<LuxuryMerchant> 
 
     @Override
     public float getScale() {
-        return 2.5f;
+        return 2f;
     }
 
     @Override

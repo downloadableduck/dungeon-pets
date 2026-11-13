@@ -1,6 +1,5 @@
 package com.jeff.pets.dungon_pets.client.rendering.gift_wrapper;
 
-import com.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsGeoRenderer;
 import com.jeff.pets.dungon_pets.client.rendering.DungeonsPetRenderState;
@@ -15,7 +14,7 @@ public class GiftWrapperRenderer extends DungeonsGeoRenderer<GiftWrapper> {
 
     @Override
     public float getScale() {
-        return 2.5f;
+        return 2f;
     }
 
     @Override

@@ -1,7 +1,6 @@
 package com.jeff.pets.dungon_pets.mob.pets;
 
 import com.jeff.pets.dungon_pets.mob.DungeonsFlyingPet;
-import com.jeff.pets.dungon_pets.mob.DungeonsGroundPet;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.level.Level;

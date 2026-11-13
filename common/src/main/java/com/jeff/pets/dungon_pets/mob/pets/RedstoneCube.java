@@ -13,7 +13,7 @@ public class RedstoneCube extends DungeonsGroundPet {
 
     @Override
     protected int stopDistance() {
-        return 2;
+        return 3;
     }
 
     @Override

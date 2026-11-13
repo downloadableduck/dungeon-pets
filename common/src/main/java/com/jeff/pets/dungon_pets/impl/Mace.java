@@ -11,7 +11,6 @@ import net.minecraft.world.item.Item;
 import org.jetbrains.annotations.NotNull;
 import org.jspecify.annotations.Nullable;
 
-import javax.crypto.Mac;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 

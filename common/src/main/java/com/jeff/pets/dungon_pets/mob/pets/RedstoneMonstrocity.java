@@ -18,6 +18,6 @@ public class RedstoneMonstrocity extends DungeonsGroundPet {
 
     @Override
     protected float heartHeight() {
-        return 8;
+        return 6;
     }
 }
