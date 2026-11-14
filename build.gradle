@@ -29,6 +29,7 @@ subprojects {
             name = "Modrinth"
             url = "https://api.modrinth.com/maven"
         }
+        maven {                url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'}
         // Add repositories to retrieve artifacts from in here.
         // You should only use this when depending on other mods because
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -38,7 +39,6 @@ subprojects {
 
     dependencies {
         minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
-        //compileOnly "maven.modrinth:WwqTyEtB:IgYebx3Y" //petsmod
         compileOnly "maven.modrinth:pets-mod:${project.pets_mod_version}-${project.minecraft_version}-Fabric" //geckolib
     }
 

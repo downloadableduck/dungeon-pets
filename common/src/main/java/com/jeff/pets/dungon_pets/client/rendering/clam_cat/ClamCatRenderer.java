@@ -27,6 +27,6 @@ public class ClamCatRenderer extends DungeonsGeoRenderer<ClamCat> {
     @Override
     public void adjustRenderPose(@NotNull RenderPassInfo<@NotNull DungeonsPetRenderState> state) {
         super.adjustRenderPose(state);
-        state.poseStack().mulPose(YP.rotationDegrees(90));
+        state.poseStack().rotate(YP.rotationDegrees(90));
     }
 }

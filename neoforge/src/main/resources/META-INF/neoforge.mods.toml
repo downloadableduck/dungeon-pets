@@ -16,14 +16,14 @@ iconFile = "assets/dungeon_pets/icon.png"
 [[dependencies.dungeon_pets]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.2.0,)"
+versionRange = "[26.3.0,)"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.dungeon_pets]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.2]"
+versionRange = "[26.3]"
 ordering = "NONE"
 side = "CLIENT"
 

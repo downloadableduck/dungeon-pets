@@ -2,6 +2,7 @@
   <library name="dungeon-pets-1.0.0-26.2-fabric-1.0.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/fabric/build/libs/dungeon-pets-1.0.0-26.2-fabric-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/neoforge/build/libs/dungeon-pets-1.0.0-26.2-fabric-1.0.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -30,7 +30,7 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     implementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
     implementation "maven.modrinth:pets-mod:${project.pets_mod_version}-${project.minecraft_version}-Fabric" //geckolib
-    implementation "maven.modrinth:8BmcQJ2H:7gaQHok7" //geckolib
+    implementation "com.geckolib:geckolib-fabric-${project.minecraft_version}:5.5.6" //geckolib
 
     common(project(path: ':common')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')

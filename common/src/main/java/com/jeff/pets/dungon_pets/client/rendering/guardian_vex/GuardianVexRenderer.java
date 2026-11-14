@@ -22,7 +22,7 @@ public class GuardianVexRenderer extends DungeonsGeoRenderer<GuardianVex> {
                                               DungeonsPetRenderState renderState,
                                               net.minecraft.client.renderer.SubmitNodeCollector renderTasks,
                                               int packedLight) {
-                poseStack.mulPose(Axis.YP.rotationDegrees(-90));
+                poseStack.rotate(Axis.YP.rotationDegrees(-90));
                 super.submitItemStackRender(poseStack, e, stackState, displayContext, renderState, renderTasks, packedLight);
             }
         });
